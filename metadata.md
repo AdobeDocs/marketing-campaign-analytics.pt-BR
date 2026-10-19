@@ -10,7 +10,7 @@ landing-page-name: mix-modeler
 landing-page-breadcrumb-title: Mix Modeler
 type: Documentation
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/mix-modeler.en
+git-repo: https://github.com/AdobeDocs/mix-modeler.pt-BR
 index: true
 feature-set: Mix Modeler
 role: User, Admin
