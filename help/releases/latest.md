@@ -7,23 +7,28 @@ exl-id: 38a47672-2af2-437c-b769-4d5febb941f5
 TQID: https://experienceleague.adobe.com/8o2hpkneIUMbBNEZfw9TsQLaGuPOxqF-XA2TV9cJnqc
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
+    internal-label: Mix Modeler
 feature_v2:
   - id: ca6bcd6f-f5ca-4e5f-a5ae-7dce7177bde9
+    internal-label: Release notes
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 autotag-review: '2026-05-01T09:06:55.437Z'
 source-git-commit: 1e6444e672e85d9f3f666bc865d020fb67c45b09
 workflow-type: tm+mt
-source-wordcount: 524
+source-wordcount: '524'
 ht-degree: 6%
-
 ---
-
 # Notas de versão atuais do Mix Modeler
 
 **Última atualização**: 19 de agosto de 2026.
