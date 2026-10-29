@@ -1,38 +1,55 @@
 ---
 title: Visão geral de modelos
-description: Saiba como criar, treinar, pontuar e gerenciar modelos de aprendizado de máquina no Mix Modeler para medir e prever resultados de marketing.
+description: Saiba como criar, treinar, pontuar e gerenciar modelos de aprendizado de máquina no Marketing Campaign Analytics para medir e prever resultados de marketing.
 feature: Models
 exl-id: c43d9bc9-4429-45c2-9247-bd24510a24be
-TQID: https://experienceleague.adobe.com/2EmrUfSObFMDb0rNRG1OWqU8c2P9Dp1nf1y8-SpEY3k
 autotag-review: '2026-05-01T08:59:10.903Z'
+TQID: 'https://experienceleague.adobe.com/T37YTKQlT1mUIfGkJwQkLLGkP0WfTs6jUbZpskPUHgo'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
+    internal-label: Marketing Campaign Analytics
 feature_v2:
+  - id: a234aebd-3855-4376-a64d-29b38411e0c5
+    internal-label: Marketing mix modeling
+  - id: a567f0f7-0057-4079-8ded-5b24cc25af15
+    internal-label: Harmonized data
   - id: f40f1683-8300-4054-aab8-77da06ad63ff
+    internal-label: Models
+  - id: fe1c9ae8-a908-4ae1-a0b6-fcf35177b134
+    internal-label: Marketing touch attribution
 subfeature_v2:
   - id: a9505d76-24a1-4ffe-bd01-6ac32d5af453
+    internal-label: Model insights
   - id: c89e26b6-808d-4500-8b01-450a63466999
+    internal-label: Build model
   - id: cb40363e-1205-4921-971c-9ee6bdb18329
+    internal-label: Scoring data
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 5579087b9381c4d8e909ed5fe3099fd42d5c6799
+    internal-label: Machine learning
+source-git-commit: 47233296898cdc0329ff7f43f897c65b4c470ee2
 workflow-type: tm+mt
-source-wordcount: 1082
+source-wordcount: '1284'
 ht-degree: 0%
-
 ---
-
 # Visão geral dos modelos
 
-A funcionalidade do modelo no Mix Modeler permite configurar, treinar e pontuar modelos específicos para seus objetivos comerciais. O treinamento e a pontuação oferecem suporte ao aprendizado de transferência orientado por IA entre a atribuição multitoque e a modelagem de mix de marketing.
+{{mm-mca-rebranding}}
+
+A funcionalidade do modelo no Marketing Campaign Analytics permite configurar, treinar e pontuar modelos específicos para seus objetivos comerciais. O treinamento e a pontuação oferecem suporte ao aprendizado de transferência orientado por IA entre a atribuição multitoque e a modelagem de mix de marketing.
 
 Os modelos são baseados nos dados harmonizados que você cria como parte do fluxo de trabalho do aplicativo.
 
-Um modelo no Mix Modeler é um modelo de aprendizado de máquina empregado para medir e prever um resultado especificado com base nos investimentos de um profissional de marketing. Pontos de contato de marketing e dados de nível de resumo podem ser usados como uma entrada. O Mix Modeler permite criar variantes de modelos com base em diferentes conjuntos de variáveis, dimensões e resultados, como receitas, unidades vendidas e clientes potenciais.
+Um modelo no Marketing Campaign Analytics é um modelo de aprendizado de máquina empregado para medir e prever um resultado especificado com base nos investimentos de um profissional de marketing. Pontos de contato de marketing e dados de nível de resumo podem ser usados como uma entrada. O Marketing Campaign Analytics permite criar variantes de modelos com base em diferentes conjuntos de variáveis, dimensões e resultados, como receitas, unidades vendidas e clientes potenciais.
 
 Um modelo requer:
 
@@ -50,13 +67,29 @@ Um modelo pode incluir opcionalmente:
 
 Quando um modelo é criado pela primeira vez, a criação inicia imediatamente o processo de treinamento e pontuação. Após a conclusão da execução inicial de treinamento e pontuação, os insights do modelo ficam disponíveis para revisão. Um modelo pode, posteriormente, ser reciclado. Além disso, dados podem ser adicionados ao modelo, o que requer a repontuação manual do modelo. O novo treinamento e a nova pontuação são um processo iterativo à medida que surgem novas descobertas e informações, e são necessários ajustes para obter um modelo mais adequado aos seus objetivos de negócios.
 
+## Modelagem completa do funnel
+
+{{release-limited-testing-section}}
+
+A modelagem completa do funnel permite modelar os estágios reais de sua funnel. Por exemplo, desde a inscrição no boletim informativo até uma compra. A modelagem completa do funnel mostra como o marketing impulsiona os clientes por meio desse funnel. A modelagem completa do funnel oferece crédito dos canais funnel superiores pelas conversões que esses canais influenciam downstream e reconcilia os resultados para que as contribuições sejam adicionadas corretamente sem contagem dupla.
+
+Use a modelagem completa do funnel para modelar em um KPI superior do funnel com um KPI inferior do funnel.
+
+* Exemplos de KPIs superiores do funnel são assinaturas de boletins informativos e outras métricas de reconhecimento de marca.
+* Exemplos de métricas inferiores do funnel são métricas de conversão típicas, como receita e pedidos.
+
+As táticas superiores do funnel geralmente recebem menos crédito em um modelo MMM com foco em conversão. A modelagem completa do funnel ajuda você a entender:
+
+* Quais táticas de mídia e marketing contribuíram para a meta superior do funnel.
+* Quais táticas de mídia e marketing causaram impacto indireto na meta de conversão. Os pesos superiores do modelo do funnel são uma entrada para o modelo inferior do funnel para oferecer maior peso para a mídia e táticas de marketing, quando relevante.
+
 ## Criar modelos
 
-Para criar um modelo, use o fluxo de configuração de modelo guiado passo a passo da Mix Modeler disponível ao selecionar **[!UICONTROL Open model canvas]**. Consulte [Criar modelos](build.md) para obter mais detalhes.
+Para criar um modelo, use o fluxo de configuração de modelo guiado passo a passo da Marketing Campaign Analytics disponível ao selecionar **[!UICONTROL Open model canvas]**. Consulte [Criar modelos](build.md) para obter mais detalhes.
 
 ## Gerenciar modelos
 
-Para exibir uma tabela dos modelos atuais, na interface do Mix Modeler:
+Para exibir uma tabela dos modelos atuais, na interface do Marketing Campaign Analytics:
 
 1. Selecione ![FileDataS2](/help/assets/icons2/FileData.svg) **[!UICONTROL Models]** no painel esquerdo.
 
@@ -66,8 +99,8 @@ Para exibir uma tabela dos modelos atuais, na interface do Mix Modeler:
 
    | Nome da coluna | Detalhes |
    |---|---|
-   | **[!UICONTROL Name]** | Nome do modelo |
-   | **[!UICONTROL Description]** | Descrição do modelo |
+   | **[!UICONTROL Name]** | Nome do modelo. Se um modelo estiver habilitado para modelagem completa do funnel, você verá uma mensagem de [!BADGE funnel]{type=Informative} completa. |
+   | **[!UICONTROL Description]** | Descrição do modelo. |
    | **[!UICONTROL Conversion event]** | A conversão selecionada para o modelo. |
    | **[!UICONTROL Run frequency]** | A frequência de execução do treinamento do modelo. |
    | **[!UICONTROL Last run]** | A data e hora do último treinamento do modelo. |
@@ -124,7 +157,9 @@ Para exibir mais detalhes de um modelo:
 
 1. Selecione ![FileData](/help/assets/icons/FileData.svg) **[!UICONTROL Models]** no painel esquerdo.
 
-1. Selecione ![Informações](/help/assets/icons/Info.svg) para que um modelo mostre um pop-up com detalhes.
+1. Selecione ![Informações](/help/assets/icons/Info.svg) para que um modelo mostre um pop-up com detalhes como **[!UICONTROL Description]**, **[!UICONTROL Run frequency]**, **[!UICONTROL Last run status]**, **[!UICONTROL Spend share]** e muito mais.
+
+
 
 
 ### Duplicar
@@ -153,18 +188,18 @@ Você é redirecionado para as etapas de criação de um novo modelo, com um nom
 
    * Para habilitar o agendamento, habilite **[!UICONTROL Enable schedule model training and scoring]**. Você só pode habilitar a programação para modelos treinados e pontuados.
 
-      1. Selecione um **[!UICONTROL Scoring frequency]**:
+     1. Selecione um **[!UICONTROL Scoring frequency]**:
 
-         * **[!UICONTROL Daily]**: Insira uma hora válida (por exemplo `10:00 am`) ou use ![Clock](/help/assets/icons/Clock.svg) para definir a hora.
-         * **[!UICONTROL Weekly]**: Selecione um dia da semana e insira uma hora válida (por exemplo `10:00 am`) ou use ![Relógio](/help/assets/icons/Clock.svg) para definir a hora.
-         * **[!UICONTROL Monthly]**: Selecione um dia do mês no menu suspenso Executar em cada e insira um horário válido (por exemplo `10:00 am`) ou use ![Relógio](/help/assets/icons/Clock.svg) para definir o horário.
+        * **[!UICONTROL Daily]**: Insira uma hora válida (por exemplo `10:00 am`) ou use ![Clock](/help/assets/icons/Clock.svg) para definir a hora.
+        * **[!UICONTROL Weekly]**: Selecione um dia da semana e insira uma hora válida (por exemplo `10:00 am`) ou use ![Relógio](/help/assets/icons/Clock.svg) para definir a hora.
+        * **[!UICONTROL Monthly]**: Selecione um dia do mês no menu suspenso Executar em cada e insira um horário válido (por exemplo `10:00 am`) ou use ![Relógio](/help/assets/icons/Clock.svg) para definir o horário.
 
-      1. Selecione um **[!UICONTROL Training frequency]** no menu suspenso: **[!UICONTROL Monthly]**, **[!UICONTROL Quarterly]**, **[!UICONTROL Yearly]** ou **[!UICONTROL None]**.
+     1. Selecione um **[!UICONTROL Training frequency]** no menu suspenso: **[!UICONTROL Monthly]**, **[!UICONTROL Quarterly]**, **[!UICONTROL Yearly]** ou **[!UICONTROL None]**.
 
    * Para atualizar os [campos de relatórios de insights granulares](/help/models/build.md#granular-insights-reporting-fields), na seção **[!UICONTROL Granular Insights Reporting Fields]**:
-      1. Selecione um ou mais campos harmonizados em **[!UICONTROL _Selecionar campos harmonizados_]** abaixo de **[!UICONTROL Includes]**. Os campos harmonizados selecionados são adicionados ao painel.
-      1. Selecione **[!UICONTROL *Campo harmonizado *]**![CrossSize100](/help/assets/icons/CrossSize100.svg) para remover um campo harmonizado do contêiner com os campos harmonizados selecionados.
-      1. Selecione **[!UICONTROL Clear all]** para remover todos os campos harmonizados selecionados.
+     1. Selecione um ou mais campos harmonizados em **[!UICONTROL _Selecionar campos harmonizados_]** abaixo de **[!UICONTROL Includes]**. Os campos harmonizados selecionados são adicionados ao painel.
+     1. Selecione **[!UICONTROL *Campo harmonizado *]**![CrossSize100](/help/assets/icons/CrossSize100.svg) para remover um campo harmonizado do contêiner com os campos harmonizados selecionados.
+     1. Selecione **[!UICONTROL Clear all]** para remover todos os campos harmonizados selecionados.
 
      >[!IMPORTANT]
      >Qualquer modelo com MTA criado antes de 12 de janeiro de 2026 deve ser duplicado para habilitar insights de modelo granular.<br/>

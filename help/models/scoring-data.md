@@ -1,29 +1,39 @@
 ---
 title: Usar dados de pontuação
-description: Saiba como os dados de pontuação de um modelo no Mix Modeler são mantidos.
+description: Saiba como os dados de pontuação de um modelo no Marketing Campaign Analytics são mantidos.
 feature: Models
 exl-id: 2f2c3d20-7b14-41cc-a11a-03e8ad9e5d7a
-TQID: https://experienceleague.adobe.com/6eMg5Azsb-rdyG5g-hIkiyJrVbgOOul5V-0TvxzCTyo
 autotag-review: '2026-05-01T08:58:54.964Z'
+TQID: 'https://experienceleague.adobe.com/WV57Ccr2rGydmuN8fKgysOXoFOufY-LlzLxdMNbBb-w'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
+    internal-label: Marketing Campaign Analytics
 feature_v2:
+  - id: e0abf868-dae2-4c1c-83e9-b21799232845
+    internal-label: Datasets
   - id: f40f1683-8300-4054-aab8-77da06ad63ff
+    internal-label: Models
+  - id: fbd94e4b-f9b8-42a4-8df5-3f917aabae24
+    internal-label: Schemas
 subfeature_v2:
   - id: cb40363e-1205-4921-971c-9ee6bdb18329
+    internal-label: Scoring data
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 5579087b9381c4d8e909ed5fe3099fd42d5c6799
+    internal-label: Metadata
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: 684
+source-wordcount: '685'
 ht-degree: 11%
-
 ---
-
 # Usar dados de pontuação
+
+{{mm-mca-rebranding}}
 
 Como parte da pontuação de um modelo, os dados de pontuação são mantidos em um conjunto de dados na Experience Platform. Quando você tiver ativado a atribuição multitoque durante a criação do modelo, dados adicionais de pontuação do evento serão mantidos em um conjunto de dados na Experience Platform.
 

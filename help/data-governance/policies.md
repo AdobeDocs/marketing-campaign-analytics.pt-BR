@@ -1,14 +1,16 @@
 ---
 title: Políticas
-description: Saiba como acessar políticas do Mix Modeler.
+description: Saiba como acessar políticas do Marketing Campaign Analytics.
 feature: Administration
 exl-id: 4dba7c30-ad1e-4213-a2b0-afc55f2448a3
 autotag-review: '2026-05-01T09:17:02.907Z'
-TQID: 'https://experienceleague.adobe.com/fk6qAZS7Uymx2dzptcazBieXIJ3mGF2pjG-EDhm-Kh4'
+TQID: 'https://experienceleague.adobe.com/uTMFYn3vc4-6JJefPhgFXGwaajrWQbgr9lW0y2s5B8U'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
-    internal-label: Mix Modeler
+    internal-label: Marketing Campaign Analytics
 feature_v2:
+  - id: a567f0f7-0057-4079-8ded-5b24cc25af15
+    internal-label: Harmonized data
   - id: f6633d1c-3d2d-4f48-95d4-4bbc9913db52
     internal-label: Data governance
   - id: fe2edbb1-46f9-4347-a27c-577cab3640cb
@@ -30,16 +32,18 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 6d83679f1c053f0be6eefd17929364d53221a31a
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '509'
 ht-degree: 2%
 ---
 # Políticas
 
+{{mm-mca-rebranding}}
+
 Depois de percorrer o fluxo de trabalho para criar um modelo e enviar a configuração do modelo, a [imposição de política](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-governance/enforcement/overview#automatic-enforcement) verifica se há violações. Se ocorrer uma violação de política, será exibido um popover indicando que uma ou mais políticas foram violadas. Essa verificação é para garantir que suas operações de dados e ações de marketing no Experience Platform estejam em conformidade com as políticas de uso de dados.
 
-Por padrão, o Mix Modeler verifica se há violações das políticas definidas pelo Adobe associadas aos seguintes rótulos e ações de marketing:
+Por padrão, o Marketing Campaign Analytics verifica se há violações das políticas definidas pelo Adobe associadas aos seguintes rótulos e ações de marketing:
 
 | Nome da política | Rótulo associado | Ação de marketing associada |
 |---|---|---|
@@ -81,7 +85,7 @@ Os pop-ups detectados pela violação da política de governança de dados forne
 A seleção ![Privacidade](/help/assets/icons/Privacy.svg) **[!UICONTROL Policies]** no painel esquerdo fornece acesso à interface [!UICONTROL Policies] do Experience Platform, permitindo gerenciar suas políticas, rótulos e ações de marketing.
 
 <!--
-Currently,  Mix Modeler does not support all of the data governance functionality offered by Experience Platform. Field level access control is supported. See [Field level access control](../harmonize-data/dataset-rules.md#field-level-access-control)
+Currently,  Marketing Campaign Analytics does not support all of the data governance functionality offered by Experience Platform. Field level access control is supported. See [Field level access control](../harmonize-data/dataset-rules.md#field-level-access-control)
 -->
 
 >[!MORELIKETHIS]

@@ -1,13 +1,13 @@
 ---
 title: Desempenho a planejar
-description: Saiba como usar a visão geral Desempenho para planejar no Mix Modeler.
+description: Saiba como usar a visão geral Desempenho para planejar no Marketing Campaign Analytics.
 feature: Dashboard, Plans, Models
 exl-id: 930fc1d5-8e28-4610-af7b-c4ec91f86a8a
 autotag-review: '2026-05-01T09:20:18.412Z'
-TQID: 'https://experienceleague.adobe.com/iRFbGXoCx5jzg6ATId2tNLTfyigoTzD4JQIqlPU5isU'
+TQID: 'https://experienceleague.adobe.com/wz2IEd-oBB8N-BSAdXMkcz9xS0xn7l4FlRJoBaQcCAw'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
-    internal-label: Mix Modeler
+    internal-label: Marketing Campaign Analytics
 feature_v2:
   - id: d822825b-9821-40d5-9b0d-42a9e3f317c5
     internal-label: Plans
@@ -29,18 +29,27 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 6d83679f1c053f0be6eefd17929364d53221a31a
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '544'
 ht-degree: 0%
 ---
 # Desempenho a planejar
 
+{{mm-mca-rebranding}}
+
 >[!NOTE]
 >
->A guia **[!UICONTROL Performance to plan]** [!BADGE Beta]{type=Informative} na ![Página inicial](/help/assets/icons/Home.svg) **[!UICONTROL Overview]** do Mix Modeler é um recurso beta e sua funcionalidade está sujeita a alterações. O recurso está disponível para um número limitado de clientes.
+>A guia **[!UICONTROL Performance to plan]** [!BADGE Beta]{type=Informative} na ![Página inicial](/help/assets/icons/Home.svg) **[!UICONTROL Overview]** do Marketing Campaign Analytics é um recurso beta e sua funcionalidade está sujeita a alterações. O recurso está disponível para um número limitado de clientes.
 
-A guia **[!UICONTROL Plans]** [!BADGE Beta]{type=Informative} na ![Página inicial](/help/assets/icons/Home.svg) do Mix Modeler **[!UICONTROL Overview]** fornece um painel de rastreamento para monitorar o desempenho de seu marketing em relação ao plano. Você pode acompanhar o desempenho real em relação ao desempenho planejado por meio de cartões de status e visualizações.
+A guia **[!UICONTROL Plans]** [!BADGE Beta]{type=Informative} na ![Página inicial](/help/assets/icons/Home.svg) do Marketing Campaign Analytics **[!UICONTROL Overview]** fornece um painel de rastreamento para monitorar o desempenho de seu marketing em relação ao plano. Você pode acompanhar o desempenho real em relação ao desempenho planejado por meio de cartões de status e visualizações.
 
 O painel ajuda a identificar lacunas, detectar riscos ou oportunidades e fazer ajustes oportunos em seus planos e orçamentos.
 

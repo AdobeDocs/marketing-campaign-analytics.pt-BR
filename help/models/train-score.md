@@ -3,25 +3,36 @@ title: Modelos de treinamento e pontuação
 description: Saiba como treinar e pontuar modelos.
 feature: Models
 exl-id: c4fbe13e-4548-421b-ba90-274fc42f4be2
-TQID: https://experienceleague.adobe.com/yHi6d-zZeT5fpedJeqNAj-Q01NlEK-y3MybA5p54DhE
 autotag-review: '2026-05-01T09:03:34.273Z'
+TQID: 'https://experienceleague.adobe.com/mvt9xE7FRLCEa9mD52LgW6bIJfHJMUd1cC4ipuebAhQ'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
+    internal-label: Marketing Campaign Analytics
 feature_v2:
+  - id: a567f0f7-0057-4079-8ded-5b24cc25af15
+    internal-label: Harmonized data
+  - id: d822825b-9821-40d5-9b0d-42a9e3f317c5
+    internal-label: Plans
+  - id: e0abf868-dae2-4c1c-83e9-b21799232845
+    internal-label: Datasets
   - id: f40f1683-8300-4054-aab8-77da06ad63ff
+    internal-label: Models
 subfeature_v2:
   - id: cb40363e-1205-4921-971c-9ee6bdb18329
+    internal-label: Scoring data
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 5579087b9381c4d8e909ed5fe3099fd42d5c6799
+    internal-label: Admin
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: 374
-ht-degree: 0%
-
+source-wordcount: '368'
+ht-degree: 2%
 ---
-
 # Modelos de treinamento e pontuação
+
+{{mm-mca-rebranding}}
 
 Depois de [criar](/help/models/build.md) um modelo, ele é automaticamente treinado e classificado. Você pode treinar novamente ou pontuar um modelo manualmente.
 
@@ -39,7 +50,7 @@ Para treinar novamente um modelo:
 
    * **[!UICONTROL Train model with last 2 years of marketing data]** ou
    * **[!UICONTROL Train model using specific date range of data]**.
-Especifique o intervalo de datas. Você pode usar o ![Calendário](/help/assets/icons/Calendar.svg) para selecionar um intervalo de datas. Você deve selecionar um intervalo de dados com no mínimo um ano.
+     Especifique o intervalo de datas. Você pode usar o ![Calendário](/help/assets/icons/Calendar.svg) para selecionar um intervalo de datas. Você deve selecionar um intervalo de dados com no mínimo um ano.
 
    ![Retreinar um modelo](../assets/retrain-model.png)
 
@@ -69,7 +80,7 @@ Para pontuar ou repontuar um modelo:
 
    * **[!UICONTROL Score new marketing data from *mm/dd/aaaa *]**, para pontuar seu modelo de forma incremental usando novos dados de marketing, ou
    * **[!UICONTROL Score specific date range of marketing data]** para pontuar para um intervalo de datas específico.
-Especifique o intervalo de datas. Você pode usar o ![Calendário](/help/assets/icons/Calendar.svg) para selecionar um intervalo de datas.
+     Especifique o intervalo de datas. Você pode usar o ![Calendário](/help/assets/icons/Calendar.svg) para selecionar um intervalo de datas.
 
    ![Pontuar novamente um modelo](../assets/rescore-model.png)
 

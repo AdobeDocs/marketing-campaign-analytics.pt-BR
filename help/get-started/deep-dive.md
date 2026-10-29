@@ -1,14 +1,19 @@
 ---
-title: Mix Modeler Deep Dive
-description: Explore a metodologia técnica por trás do Adobe Mix Modeler, incluindo atribuição multitoque, modelagem de mix de marketing, aprendizado de transferência e otimização de orçamento.
+title: Marketing Campaign Analytics Deep Dive
+description: Explore a metodologia técnica por trás do Adobe Marketing Campaign Analytics, incluindo atribuição multitoque, modelagem de mix de marketing, aprendizado de transferência e otimização de orçamento.
 feature: Administration
 hide: true
+TQID: 'https://experienceleague.adobe.com/vIeES6bmdXOt6GIEA5Mt--IbyJ5g64kf-gyb6oEK0Ro'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
-    internal-label: Mix Modeler
+    internal-label: Marketing Campaign Analytics
 feature_v2:
   - id: a234aebd-3855-4376-a64d-29b38411e0c5
     internal-label: Marketing mix modeling
+  - id: e0abf868-dae2-4c1c-83e9-b21799232845
+    internal-label: Datasets
+  - id: f40f1683-8300-4054-aab8-77da06ad63ff
+    internal-label: Models
   - id: fe1c9ae8-a908-4ae1-a0b6-fcf35177b134
     internal-label: Marketing touch attribution
   - id: fe2edbb1-46f9-4347-a27c-577cab3640cb
@@ -24,23 +29,41 @@ level_v2:
 topic_v2:
   - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
     internal-label: Artificial intelligence
-source-git-commit: 6d83679f1c053f0be6eefd17929364d53221a31a
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
+  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+    internal-label: Machine learning
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: '2835'
+source-wordcount: '2853'
 ht-degree: 0%
 ---
 
 # Mergulho profundo
 
 
-O Adobe Mix Modeler é uma plataforma unificada de medição alimentada por IA/ML que combina MTA (atribuição multitoque) e MMM (modelagem de mix de marketing) para fornecer insights de marketing precisos, escaláveis e que não se tornem obsoletos. Este artigo apresenta um detalhamento da metodologia, das opções de design e das inovações técnicas por trás do Mix Modeler. E é baseado na [sessão deste Summit 2025](https://business.adobe.com/br/summit/2025/sessions/marketing-mix-modeling-at-adobe-learn-to-predict-s602.html){target="_blank"}, que apresenta um detalhamento da metodologia, opções de design e inovações técnicas por trás da Mix Modeler.
+O Adobe Marketing Campaign Analytics é uma plataforma unificada de medição alimentada por IA/ML que combina MTA (atribuição multitoque) e MMM (modelagem de mix de marketing) para fornecer insights de marketing precisos, escaláveis e que não se tornem obsoletos. Este artigo apresenta um detalhamento da metodologia, das opções de design e das inovações técnicas por trás do Marketing Campaign Analytics. E é baseado na [sessão deste Summit 2025](https://business.adobe.com/br/summit/2025/sessions/marketing-mix-modeling-at-adobe-learn-to-predict-s602.html){target="_blank"}, que apresenta um detalhamento da metodologia, opções de design e inovações técnicas por trás da Marketing Campaign Analytics.
 
-À medida que a complexidade de marketing cresce, as abordagens tradicionais de medição ficam aquém. Dados fragmentados, a evolução das restrições de privacidade e a necessidade de velocidade e rigor tornam necessário repensar a avaliação do desempenho de marketing. A resposta da Adobe é o Mix Modeler: um sistema integrado que usa aprendizagem de máquina para sintetizar várias fontes de dados e modelar paradigmas em uma estratégia coesa.
+À medida que a complexidade de marketing cresce, as abordagens tradicionais de medição ficam aquém. Dados fragmentados, a evolução das restrições de privacidade e a necessidade de velocidade e rigor tornam necessário repensar a avaliação do desempenho de marketing. A resposta da Adobe é o Marketing Campaign Analytics: um sistema integrado que usa aprendizagem de máquina para sintetizar várias fontes de dados e modelar paradigmas em uma estratégia coesa.
 
 
 >[!TIP]
 >
->Um dos principais benefícios do Mix Modeler é a acessibilidade da solução para os profissionais de marketing. O aplicativo simplifica as complexidades da ciência de dados por meio de uma interface fácil de usar que não requer conhecimento de fundo da ciência de dados. Se você estiver interessado em um aprofundamento, este artigo explora as opções técnicas feitas ao desenvolver o Mix Modeler. O artigo presume alguma familiaridade com conceitos (avançados) de ciência de dados.
+>Um dos principais benefícios do Marketing Campaign Analytics é a acessibilidade da solução para os profissionais de marketing. O aplicativo simplifica as complexidades da ciência de dados por meio de uma interface fácil de usar que não requer conhecimento de fundo da ciência de dados. Se você estiver interessado em um aprofundamento, este artigo explora as opções técnicas feitas ao desenvolver o Marketing Campaign Analytics. O artigo presume alguma familiaridade com conceitos (avançados) de ciência de dados.
 
 Este artigo explica os componentes fundamentais com mais detalhes. Esses componentes fundamentais são:
 
@@ -55,7 +78,7 @@ Este artigo explica os componentes fundamentais com mais detalhes. Esses compone
 
 ### Visão geral
 
-O modelo de atribuição multitoque (MTA) que capacita o Mix Modeler baseia-se em um modelo de sobrevivência em tempo discreto treinado em dados no nível do evento. Os dados incluem pesquisas, cliques, visualizações de produto, adição a carrinhos e check-outs. Usando o aprendizado supervisionado, o modelo estima a probabilidade condicional de conversão em cada etapa da jornada do cliente. O modelo considera os caminhos de jornada do cliente de conversão e não conversão para medir como pontos de contato de marketing diferentes influenciam o comportamento do cliente ao longo do tempo. O caminho de não conversão é tão importante quanto o caminho de conversão. O contraste entre os dois caminhos ajuda a entender se um tipo específico de ponto de contato de marketing impulsiona a conversão de maneira eficaz. Por exemplo, se um tipo de ponto de contato aparecer com a mesma probabilidade em um caminho que não seja de conversão, esse ponto de contato não terá impacto na conversão. Esse comportamento é contrário a um ponto de contato que aparece com frequência em um caminho de conversão e não em um caminho que não seja de conversão.
+O modelo de atribuição multitoque (MTA) que capacita o Marketing Campaign Analytics baseia-se em um modelo de sobrevivência em tempo discreto treinado em dados no nível do evento. Os dados incluem pesquisas, cliques, visualizações de produto, adição a carrinhos e check-outs. Usando o aprendizado supervisionado, o modelo estima a probabilidade condicional de conversão em cada etapa da jornada do cliente. O modelo considera os caminhos de jornada do cliente de conversão e não conversão para medir como pontos de contato de marketing diferentes influenciam o comportamento do cliente ao longo do tempo. O caminho de não conversão é tão importante quanto o caminho de conversão. O contraste entre os dois caminhos ajuda a entender se um tipo específico de ponto de contato de marketing impulsiona a conversão de maneira eficaz. Por exemplo, se um tipo de ponto de contato aparecer com a mesma probabilidade em um caminho que não seja de conversão, esse ponto de contato não terá impacto na conversão. Esse comportamento é contrário a um ponto de contato que aparece com frequência em um caminho de conversão e não em um caminho que não seja de conversão.
 
 ![Dados de nível de evento](/help/assets/event-level-data.png)
 
@@ -106,7 +129,7 @@ Os principais conceitos por trás da atribuição multitoque são:
 
 ### Benefícios
 
-A abordagem de atribuição multitoque selecionada para o Mix Modeler tem várias vantagens principais.
+A abordagem de atribuição multitoque selecionada para o Marketing Campaign Analytics tem várias vantagens principais.
 
 * Contabilize os caminhos de conversão e não conversão, garantindo assim uma estimativa mais precisa do impacto real da mídia.
 * Incorpore o adstock e retornos decrescentes que modelam o comportamento real do cliente e evite suposições simplificadas que são frequentemente encontradas em modelos baseados em regras.
@@ -114,12 +137,12 @@ A abordagem de atribuição multitoque selecionada para o Mix Modeler tem vária
 * Suporte atribuição intuitiva de ponto de contato que permite uma interpretação clara contrária a outros métodos, como Modelos ocultos de Markov.
 * Oferece alto desempenho e alta precisão preditiva quando comparado a outros algoritmos de classificação.
 
-A Mix Modeler fornece uma [interface amigável do profissional de marketing](/help/models/insights.md#attribution) para os insights resultantes da atribuição multitoque.
+A Marketing Campaign Analytics fornece uma [interface amigável do profissional de marketing](/help/models/insights.md#attribution) para os insights resultantes da atribuição multitoque.
 
 ![Insights de atribuição de modelo](/help/assets/model-insights-attribution.png)
 
 
-Embora a atribuição multitoque forneça todos esses benefícios, a Mix Modeler não depende totalmente dos insights de conversão dos dados no nível do evento. A modelagem de mix de marketing é outro componente fundamental para levar em consideração os dados agregados.
+Embora a atribuição multitoque forneça todos esses benefícios, a Marketing Campaign Analytics não depende totalmente dos insights de conversão dos dados no nível do evento. A modelagem de mix de marketing é outro componente fundamental para levar em consideração os dados agregados.
 
 ## Modelagem de mix de marketing (MMM)
 
@@ -177,7 +200,7 @@ Os benefícios da abordagem de modelagem de mix de marketing são baseados no fa
 * Impacto variável no tempo em que o mesmo nível de investimento em marketing pode gerar diferentes retornos em momentos diferentes devido a fatores externos.
 * Recomendações de orçamento ao longo do tempo em que as condições de mercado ou as flutuações da linha de base esperadas ajudam a informar a alocação de orçamento ao longo do tempo.
 
-O Mix Modeler fornece uma [interface amigável do profissional de marketing](/help/models/insights.md#attribution) para os vários insights resultantes da modelagem de mix de marketing. Por exemplo, um detalhamento de contribuição do fator para mostrar a proporção das conversões base que podem ser atribuídas a vários fatores incluídos no modelo.
+O Marketing Campaign Analytics fornece uma [interface amigável do profissional de marketing](/help/models/insights.md#attribution) para os vários insights resultantes da modelagem de mix de marketing. Por exemplo, um detalhamento de contribuição do fator para mostrar a proporção das conversões base que podem ser atribuídas a vários fatores incluídos no modelo.
 
 
 ![Detalhamento da contribuição do fator](/help/assets/factors-example.png)
@@ -212,7 +235,7 @@ Existe alguma capacidade de se afastar de um orçamento fixo, mudando o orçamen
 
 ## Transferir aprendizado
 
-Ao lado da atribuição multitoque e da modelagem de mix de marketing, a experimentação é outro pilar importante para resolver problemas de medição de marketing. Embora a experimentação não seja implementada na estrutura do Mix Modeler, você pode usar a experimentação, como desativar o marketing em determinados mercados, para entender o impacto causal do marketing nas vendas.
+Ao lado da atribuição multitoque e da modelagem de mix de marketing, a experimentação é outro pilar importante para resolver problemas de medição de marketing. Embora a experimentação não seja implementada na estrutura do Marketing Campaign Analytics, você pode usar a experimentação, como desativar o marketing em determinados mercados, para entender o impacto causal do marketing nas vendas.
 
 A Adobe recomenda e emprega o aprendizado de transferência para combinar insights de atribuição de multitoque, modelagem de mix de marketing, experimentação e outras fontes de conhecimento anteriores.  Essa combinação pode ser descrita como uma abordagem em camadas. Cada camada tem lacunas para ilustrar as limitações na produção de um modelo coeso. Mas se empilhar as camadas da maneira correta, pode-se compensar as lacunas no modelo combinado.
 Aplique essa analogia ao usar a combinação de atribuição multitoque, modelagem de mix de marketing, experimentação e fontes de conhecimento anteriores. Misture esses componentes de forma que a combinação sofra o mínimo de falhas em cada um dos componentes.
@@ -291,10 +314,10 @@ No segundo exemplo, as unidades das duas conversões não são semelhantes (KPI 
 
 ## Resumo
 
-O Adobe Mix Modeler é mais do que uma ferramenta de medição; o Mix Modeler é um mecanismo de suporte a decisões e seus pontos fortes são:
+O Adobe Marketing Campaign Analytics é mais do que uma ferramenta de medição; o Marketing Campaign Analytics é um mecanismo de suporte a decisões e seus pontos fortes são:
 
 * A habilidade de modelar a complexidade do mundo real com rigor estatístico
 * Uma integração unificada de dados diversos e paradigmas de modelagem
 * Uma arquitetura que não se torna obsoleta e se adapta às tendências de descontinuação de dados
 
-A combinação da capacidade de interpretação com o desempenho tornou o Mix Modeler central para a transformação do marketing orientado por dados da Adobe. O Mix Modeler capacita as equipes de marketing a tomar decisões de investimento mais rápidas, inteligentes e alinhadas.
+A combinação da capacidade de interpretação com o desempenho tornou o Marketing Campaign Analytics central para a transformação do marketing orientado por dados da Adobe. O Marketing Campaign Analytics capacita as equipes de marketing a tomar decisões de investimento mais rápidas, inteligentes e alinhadas.

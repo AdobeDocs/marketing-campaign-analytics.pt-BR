@@ -1,34 +1,51 @@
 ---
 title: Regras do conjunto de dados
-description: Saiba como definir regras de conjunto de dados para usar como parte da harmonização de seus dados no Mix Modeler.
+description: Saiba como definir regras de conjunto de dados para usar como parte da harmonização de seus dados no Marketing Campaign Analytics.
 feature: Harmonized Data, Dataset Rules
 exl-id: 57d7940a-2900-4814-a30d-bb02bff7615d
-TQID: https://experienceleague.adobe.com/AHQ73zgE97hHUbZ-lW9-l0c-MKHjA50Qcj9w02MjyGM
+autotag-review: '2026-05-01T09:12:48.985Z'
+TQID: 'https://experienceleague.adobe.com/y9TAqZY49fiIesDpEQ-NO58bR2SU3hYvqk5lAlgrslA'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
+    internal-label: Marketing Campaign Analytics
 feature_v2:
   - id: a567f0f7-0057-4079-8ded-5b24cc25af15
+    internal-label: Harmonized data
+  - id: d822825b-9821-40d5-9b0d-42a9e3f317c5
+    internal-label: Plans
+  - id: e0abf868-dae2-4c1c-83e9-b21799232845
+    internal-label: Datasets
+  - id: f40f1683-8300-4054-aab8-77da06ad63ff
+    internal-label: Models
+  - id: fbd94e4b-f9b8-42a4-8df5-3f917aabae24
+    internal-label: Schemas
 subfeature_v2:
   - id: ba4fd72c-282e-4fb6-abc1-08e6fb87b2ad
+    internal-label: Dataset rules
   - id: d4b8ba18-64c1-4413-be54-74405ec7f558
+    internal-label: Dataset mapping
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-autotag-review: '2026-05-01T09:12:48.985Z'
-source-git-commit: 0e1bd1a2e96e96b98be502b9c8413d63816efa3d
+    internal-label: Insights
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: 2161
+source-wordcount: '2169'
 ht-degree: 3%
-
 ---
-
 # Regras do conjunto de dados
 
-As regras do conjunto de dados ajudam a mapear os campos harmonizados com campos a partir dos dados assimilados no Mix Modeler.
+{{mm-mca-rebranding}}
+
+As regras do conjunto de dados ajudam a mapear os campos harmonizados com campos a partir dos dados assimilados no Marketing Campaign Analytics.
 
 * Para dados agregados assimilados no Adobe Experience Platform, mapeie um ou mais campos do conjunto de dados disponíveis para os campos harmonizados apropriados.
 * Para dados do evento, você pode mapear individualmente um ou mais campos harmonizados para campos do conjunto de dados, diretamente ou usando condições.
@@ -37,7 +54,7 @@ As regras do conjunto de dados ajudam a mapear os campos harmonizados com campos
 
 ## Gerenciar regras do conjunto de dados
 
-Para ver uma tabela das regras do conjunto de dados disponíveis, na interface do Mix Modeler:
+Para ver uma tabela das regras do conjunto de dados disponíveis, na interface do Marketing Campaign Analytics:
 
 1. Selecione ![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** no painel esquerdo.
 
@@ -69,7 +86,7 @@ As colunas da tabela especificam detalhes sobre as regras do conjunto de dados:
 
 ### Criar uma regra de conjunto de dados
 
-Para criar uma regra de conjunto de dados, na interface ![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Dataset rules]** no Mix Modeler, selecione **[!UICONTROL Create a dataset rule]** no assistente **[!UICONTROL Dataset rules configuration]**.
+Para criar uma regra de conjunto de dados, na interface ![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Dataset rules]** no Marketing Campaign Analytics, selecione **[!UICONTROL Create a dataset rule]** no assistente **[!UICONTROL Dataset rules configuration]**.
 
 Na tela **[!UICONTROL Create]**,
 
@@ -83,7 +100,7 @@ Na tela **[!UICONTROL Create]**,
 
    Os dados de relatórios dos editores são muito importantes para os analistas de marketing, pois trabalhar com editores geralmente implica gastos significativos, e as alterações nos dados de relatórios podem resultar em insights e planos de investimento muito diferentes. Além disso, os analistas de marketing precisam de dados precisos para obter os insights certos e apresentar propostas convincentes para ganhar a confiança das partes interessadas. No entanto, esses editores, como Google e Facebook, geralmente reafirmam ou excluem dados de relatórios à medida que reconciliam seus dados. O período para a maioria das alterações ocorre dentro de 7 dias do desempenho da mídia relatado. São possíveis alterações adicionais nos dados no prazo de 30 dias. Em geral, após 30 dias, os livros são considerados fechados e os dados são concluídos.
 
-   O Mix Modeler oferece suporte à redeclaração de dados. Para garantir que os dados usados para relatórios, modelagem e planejamento sejam precisos. E que os dados são capazes de suportar as expectativas e necessidades da marca e do analista de marketing.
+   O Marketing Campaign Analytics oferece suporte à redeclaração de dados. Para garantir que os dados usados para relatórios, modelagem e planejamento sejam precisos. E que os dados são capazes de suportar as expectativas e necessidades da marca e do analista de marketing.
 
    Você pode enviar linhas reexpressas de dados de resumo como linhas incrementais em um conjunto de dados do Experience Platform, e o serviço de harmonização atualiza o conjunto de dados harmonizado com esses dados reexpressos. Da mesma forma, também é possível remover linhas de dados de resumo que precisam ser refletidas no serviço de harmonização.
 
@@ -135,7 +152,7 @@ Quando terminar, selecione **[!UICONTROL Save as draft]** para salvar uma versã
 
 #### Conjuntos de dados de resumo
 
-Ao mapear um campo harmonizado padrão a partir de um conjunto de dados de resumo, o Mix Modeler tenta deduzir o campo do conjunto de dados do Experience Platform correspondente. Quando bem-sucedido:
+Ao mapear um campo harmonizado padrão a partir de um conjunto de dados de resumo, o Marketing Campaign Analytics tenta deduzir o campo do conjunto de dados do Experience Platform correspondente. Quando bem-sucedido:
 
 * Se o campo for do tipo dimensão, **[!UICONTROL Map into]** será selecionado como **[!UICONTROL Mapping type]**.
 * Se o campo for do tipo métrica, **[!UICONTROL Sum]** será selecionado como **[!UICONTROL Mapping type]**.
@@ -212,7 +229,7 @@ Para o campo harmonizado **[!UICONTROL Factor value]**, use um dos operadores de
 
 ### Editar uma regra de conjunto de dados
 
-Para editar uma regra de conjunto de dados, na interface ![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Dataset rules]** no Mix Modeler:
+Para editar uma regra de conjunto de dados, na interface ![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Dataset rules]** no Marketing Campaign Analytics:
 
 1. Selecione ![Mais](/help/assets/icons/More.svg) na coluna **[!UICONTROL Dataset]** para a regra de conjunto de dados que você deseja editar.
 1. No menu de contexto, selecione ![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** para começar a editar a regra do conjunto de dados. Consulte [Criar uma regra de conjunto de dados](#create-a-dataset-rule) para obter mais detalhes.
@@ -220,7 +237,7 @@ Para editar uma regra de conjunto de dados, na interface ![DataSearch](/help/ass
 
 ### Excluir uma regra de conjunto de dados
 
-Para excluir uma regra de conjunto de dados, na interface ![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Dataset rules]** no Mix Modeler:
+Para excluir uma regra de conjunto de dados, na interface ![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Dataset rules]** no Marketing Campaign Analytics:
 
 1. Selecione ![Mais](/help/assets/icons/More.svg) na coluna **[!UICONTROL Dataset]** para a regra de conjunto de dados que você deseja excluir.
 1. No menu de contexto, selecione ![Excluir](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** para excluir a regra do conjunto de dados. Será solicitada uma confirmação. Selecione **[!UICONTROL Delete]** para excluir permanentemente a regra de conjunto de dados selecionada.
