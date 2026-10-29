@@ -76,7 +76,7 @@ Para adicionar uma conversão, na interface ![DataSearch](/help/assets/icons/Dat
 
       1. Selecione um valor para o operador ![Divisa](/help/assets/icons/ChevronDown.svg), por exemplo **[!UICONTROL is]**.
 
-      1. Selecione um valor em **[!UICONTROL *Selecione o valor *]**ou insira um valor, por exemplo **[!UICONTROL Store]**.
+      1. Selecione um valor em **[!UICONTROL *Selecione o valor *]**&#x200B;ou insira um valor, por exemplo **[!UICONTROL Store]**.
 
    1. Selecione um campo harmonizado de **[!UICONTROL Conversion metric for analysis]**, por exemplo **[!UICONTROL Orders]**.
 

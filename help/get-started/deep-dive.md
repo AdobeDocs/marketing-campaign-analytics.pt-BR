@@ -165,9 +165,9 @@ Os principais conceitos por trás da modelagem de mix de marketing são:
 * **Modelo multiplicativo**: vendas ou conversões são o produto de uma linha de base e multiplicadores de mídia.
 
   Então, em vez de usar um modelo aditivo:
-  *Conversões semanais = Demanda da linha de base **+**Multiplicador da Pesquisa **+**Multiplicador da Exibição **+**....*
+  *Conversões semanais = Demanda da linha de base **+**&#x200B;Multiplicador da Pesquisa **+**&#x200B;Multiplicador da Exibição **+**....*
 usar um modelo multiplicativo:
-  *Conversões semanais = Demanda da linha de base **x**Multiplicador da Pesquisa **x**Multiplicador da Exibição **x**....*
+  *Conversões semanais = Demanda da linha de base **x**&#x200B;Multiplicador da Pesquisa **x**&#x200B;Multiplicador da Exibição **x**....*
 
   Ou em uma fórmula: ** Y = ⨍<sub>BL</sub>(X<sub>fatores</sub>;θ<sub>fatores</sub>) x ⨍<sub>S</sub>(X<sub>S</sub>;θ<sub>S</sub>) x ⨍<sub>D</sub>(X<sub>D</sub>;θ<sub>D</sub>)*
 

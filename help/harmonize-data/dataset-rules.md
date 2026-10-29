@@ -110,17 +110,17 @@ Na tela **[!UICONTROL Create]**,
 
      1. Selecione **[!UICONTROL Count]** ou **[!UICONTROL Sum]** de **[!UICONTROL Mapping type]**.
 
-     1. Selecione um **[!UICONTROL *campo do conjunto de dados do AEP *]**para o qual você deseja mapear o campo harmonizado por padrão.
+     1. Selecione um **[!UICONTROL *campo do conjunto de dados do AEP *]**&#x200B;para o qual você deseja mapear o campo harmonizado por padrão.
 
    * Quando o campo selecionado é do tipo dimensão:
 
      1. Selecione **[!UICONTROL Map Into]** ou **[!UICONTROL Case]** de **[!UICONTROL Mapping type]**.
 
-     1. Ao selecionar **[!UICONTROL Map Into]**, selecione **[!UICONTROL Field]** e **[!UICONTROL *campo do conjunto de dados do AEP *]**ou **[!UICONTROL Value]**e um valor padrão para mapear o campo harmonizado por padrão para o campo do conjunto de dados ou valor inserido.
+     1. Ao selecionar **[!UICONTROL Map Into]**, selecione **[!UICONTROL Field]** e **[!UICONTROL *campo do conjunto de dados do AEP *]**&#x200B;ou **[!UICONTROL Value]**&#x200B;e um valor padrão para mapear o campo harmonizado por padrão para o campo do conjunto de dados ou valor inserido.
 
-     1. Ao selecionar **[!UICONTROL Case]**, selecione **[!UICONTROL Field]** e **[!UICONTROL *campo do conjunto de dados do AEP *]**ou **[!UICONTROL Value]**e um valor padrão para mapear o campo harmonizado por padrão para o campo do conjunto de dados ou valor inserido.
+     1. Ao selecionar **[!UICONTROL Case]**, selecione **[!UICONTROL Field]** e **[!UICONTROL *campo do conjunto de dados do AEP *]**&#x200B;ou **[!UICONTROL Value]**&#x200B;e um valor padrão para mapear o campo harmonizado por padrão para o campo do conjunto de dados ou valor inserido.
 
-        1. Para definir valores explicitamente, você define um ou mais casos, que consistem em uma ou mais condições. Cada condição pode verificar um **[!UICONTROL *campo do conjunto de dados do AEP *]**específico, seja ele **[!UICONTROL Exists]**ou **[!UICONTROL Not Exists]**, seja ele **[!UICONTROL Contains]**,**[!UICONTROL Not Contains]**,**[!UICONTROL Equals]**,**[!UICONTROL Not Equals]**,**[!UICONTROL Starts With]**ou **[!UICONTROL Ends With]**um valor inserido em**[!UICONTROL * Inserir valor de entrada *]**.
+        1. Para definir valores explicitamente, você define um ou mais casos, que consistem em uma ou mais condições. Cada condição pode verificar um **[!UICONTROL *campo do conjunto de dados do AEP *]**&#x200B;específico, seja ele **[!UICONTROL Exists]**&#x200B;ou **[!UICONTROL Not Exists]**, seja ele **[!UICONTROL Contains]**,**[!UICONTROL Not Contains]**,**[!UICONTROL Equals]**,**[!UICONTROL Not Equals]**,**[!UICONTROL Starts With]**&#x200B;ou **[!UICONTROL Ends With]**&#x200B;um valor inserido em&#x200B;**[!UICONTROL * Inserir valor de entrada *]**.
 
         1. Para adicionar outro caso, selecione ![Adicionar](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add case]**. Para adicionar outra condição, selecione ![Adicionar](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add condition]**.
 
