@@ -6,7 +6,7 @@ landing-page-name: mix-modeler
 landing-page-breadcrumb-title: Marketing Campaign Analytics
 type: Documentation
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/marketing-campaign-analytics.en
+git-repo: https://github.com/AdobeDocs/marketing-campaign-analytics.pt-BR
 index: true
 feature-set: Mix Modeler
 role: User, Admin
