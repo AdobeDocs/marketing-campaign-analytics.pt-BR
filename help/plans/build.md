@@ -3,10 +3,10 @@ title: Criar planos
 description: Saiba como criar planos no Marketing Campaign Analytics.
 feature: Plans
 exl-id: 6d61d0b2-5871-4d00-9a35-73fff0a1c3e5
-TQID: https://experienceleague.adobe.com/8p0uU5IAWbhwE9L0nVC-au5uyAh05jAJW47l0Jgucy4
+TQID: 'https://experienceleague.adobe.com/8p0uU5IAWbhwE9L0nVC-au5uyAh05jAJW47l0Jgucy4'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
-    internal-label: Mix Modeler
+    internal-label: Marketing Campaign Analytics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -15,7 +15,7 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
+source-git-commit: 67f7acd32f3456e71dbea0baf147bf2dc1e01980
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 0%
