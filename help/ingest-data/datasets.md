@@ -42,7 +42,7 @@ Para gerenciar conjuntos de dados que contenham os dados que você deseja assimi
 
 1. Selecione ![Dados](/help/assets/icons/Data.svg) **[!UICONTROL Datasets]**, abaixo de **[!UICONTROL SETUP]**.
 
-Consulte o [guia da interface do usuário de conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en) para obter mais informações.
+Consulte o [guia da interface do usuário de conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=pt-BR) para obter mais informações.
 
 >[!MORELIKETHIS]
 >

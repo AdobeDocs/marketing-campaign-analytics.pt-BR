@@ -41,7 +41,7 @@ ht-degree: 2%
 
 {{mm-mca-rebranding}}
 
-Depois de percorrer o fluxo de trabalho para criar um modelo e enviar a configuração do modelo, a [imposição de política](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview#automatic-enforcement) verifica se há violações. Se ocorrer uma violação de política, será exibido um popover indicando que uma ou mais políticas foram violadas. Essa verificação é para garantir que suas operações de dados e ações de marketing no Experience Platform estejam em conformidade com as políticas de uso de dados.
+Depois de percorrer o fluxo de trabalho para criar um modelo e enviar a configuração do modelo, a [imposição de política](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-governance/enforcement/overview#automatic-enforcement) verifica se há violações. Se ocorrer uma violação de política, será exibido um popover indicando que uma ou mais políticas foram violadas. Essa verificação é para garantir que suas operações de dados e ações de marketing no Experience Platform estejam em conformidade com as políticas de uso de dados.
 
 Por padrão, o Marketing Campaign Analytics verifica se há violações das políticas definidas pelo Adobe associadas aos seguintes rótulos e ações de marketing:
 
@@ -90,7 +90,7 @@ Currently,  Marketing Campaign Analytics does not support all of the data govern
 
 >[!MORELIKETHIS]
 >
->[Visão geral das políticas de uso de dados](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/policies/overview)
+>[Visão geral das políticas de uso de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-governance/policies/overview)
 >
 >
 
