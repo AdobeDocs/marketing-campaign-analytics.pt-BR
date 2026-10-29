@@ -55,7 +55,7 @@ A Governança de dados da Experience Platform oferece a capacidade de controlar 
 
 Os rótulos e políticas de uso de dados que são criados em conjuntos de dados consumidos pela superfície do Experience Platform na Marketing Campaign Analytics, quando apropriado. Por exemplo, esses rótulos interrompem ou avisam os usuários ao excluir conjuntos de dados que fazem parte de uma regra de conjunto de dados nos dados harmonizados. Ou ocultar campos de esquema restritos para usuários ao criar uma regra de conjunto de dados.
 
-A integração de governança de dados permite gerenciar a conformidade com mais eficiência. Os administradores de dados da sua organização podem definir políticas de restrição de uso. Como resultado, você pode usar dados que estejam em conformidade com as políticas definidas pelos administradores de dados. Leia a documentação em [Rótulos e políticas](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/data-governance) para saber mais.
+A integração de governança de dados permite gerenciar a conformidade com mais eficiência. Os administradores de dados da sua organização podem definir políticas de restrição de uso. Como resultado, você pode usar dados que estejam em conformidade com as políticas definidas pelos administradores de dados. Leia a documentação em [Rótulos e políticas](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-governance) para saber mais.
 
 Os seguintes recursos de governança de dados estão disponíveis:
 

@@ -56,7 +56,7 @@ ht-degree: 0%
 # Mergulho profundo
 
 
-O Adobe Marketing Campaign Analytics é uma plataforma unificada de medição alimentada por IA/ML que combina MTA (atribuição multitoque) e MMM (modelagem de mix de marketing) para fornecer insights de marketing precisos, escaláveis e que não se tornem obsoletos. Este artigo apresenta um detalhamento da metodologia, das opções de design e das inovações técnicas por trás do Marketing Campaign Analytics. E é baseado na [sessão deste Summit 2025](https://business.adobe.com/br/summit/2025/sessions/marketing-mix-modeling-at-adobe-learn-to-predict-s602.html){target="_blank"}, que apresenta um detalhamento da metodologia, opções de design e inovações técnicas por trás da Marketing Campaign Analytics.
+O Adobe Marketing Campaign Analytics é uma plataforma unificada de medição alimentada por IA/ML que combina MTA (atribuição multitoque) e MMM (modelagem de mix de marketing) para fornecer insights de marketing precisos, escaláveis e que não se tornem obsoletos. Este artigo apresenta um detalhamento da metodologia, das opções de design e das inovações técnicas por trás do Marketing Campaign Analytics. E é baseado na [sessão deste Summit 2025](https://business.adobe.com/summit/2025/sessions/marketing-mix-modeling-at-adobe-learn-to-predict-s602.html){target="_blank"}, que apresenta um detalhamento da metodologia, opções de design e inovações técnicas por trás da Marketing Campaign Analytics.
 
 À medida que a complexidade de marketing cresce, as abordagens tradicionais de medição ficam aquém. Dados fragmentados, a evolução das restrições de privacidade e a necessidade de velocidade e rigor tornam necessário repensar a avaliação do desempenho de marketing. A resposta da Adobe é o Marketing Campaign Analytics: um sistema integrado que usa aprendizagem de máquina para sintetizar várias fontes de dados e modelar paradigmas em uma estratégia coesa.
 
@@ -165,9 +165,9 @@ Os principais conceitos por trás da modelagem de mix de marketing são:
 * **Modelo multiplicativo**: vendas ou conversões são o produto de uma linha de base e multiplicadores de mídia.
 
   Então, em vez de usar um modelo aditivo:
-  *Conversões semanais = Demanda da linha de base **+**&#x200B;Multiplicador da Pesquisa **+**&#x200B;Multiplicador da Exibição **+**....*
+  *Conversões semanais = Demanda da linha de base **+**Multiplicador da Pesquisa **+**Multiplicador da Exibição **+**....*
 usar um modelo multiplicativo:
-  *Conversões semanais = Demanda da linha de base **x**&#x200B;Multiplicador da Pesquisa **x**&#x200B;Multiplicador da Exibição **x**....*
+  *Conversões semanais = Demanda da linha de base **x**Multiplicador da Pesquisa **x**Multiplicador da Exibição **x**....*
 
   Ou em uma fórmula: ** Y = ⨍<sub>BL</sub>(X<sub>fatores</sub>;θ<sub>fatores</sub>) x ⨍<sub>S</sub>(X<sub>S</sub>;θ<sub>S</sub>) x ⨍<sub>D</sub>(X<sub>D</sub>;θ<sub>D</sub>)*
 
