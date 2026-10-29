@@ -1,16 +1,27 @@
 ---
-title: Visualizar as notas de versão atuais do Mix Modeler
-description: Notas de versão mais recentes do Mix Modeler
+title: Visualizar as notas de versão atuais do Marketing Campaign Analytics
+description: Notas de versão mais recentes do Marketing Campaign Analytics
 feature-set: Experience Cloud
 feature: Release Notes
 exl-id: 38a47672-2af2-437c-b769-4d5febb941f5
-TQID: https://experienceleague.adobe.com/8o2hpkneIUMbBNEZfw9TsQLaGuPOxqF-XA2TV9cJnqc
+autotag-review: '2026-05-01T09:06:55.437Z'
+TQID: 'https://experienceleague.adobe.com/fZpl0bWBtDzOWllXsyGPErO637PaIdJ-2E-l-89JpDk'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
-    internal-label: Mix Modeler
+    internal-label: Marketing Campaign Analytics
 feature_v2:
+  - id: a567f0f7-0057-4079-8ded-5b24cc25af15
+    internal-label: Harmonized data
   - id: ca6bcd6f-f5ca-4e5f-a5ae-7dce7177bde9
     internal-label: Release notes
+  - id: d822825b-9821-40d5-9b0d-42a9e3f317c5
+    internal-label: Plans
+  - id: e0abf868-dae2-4c1c-83e9-b21799232845
+    internal-label: Datasets
+  - id: f40f1683-8300-4054-aab8-77da06ad63ff
+    internal-label: Models
+  - id: fbd94e4b-f9b8-42a4-8df5-3f917aabae24
+    internal-label: Schemas
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -23,17 +34,25 @@ topic_v2:
     internal-label: Experimentation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-autotag-review: '2026-05-01T09:06:55.437Z'
-source-git-commit: 1e6444e672e85d9f3f666bc865d020fb67c45b09
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 6%
+source-wordcount: '583'
+ht-degree: 5%
 ---
-# Notas de versão atuais do Mix Modeler
+# Notas de versão atuais do Marketing Campaign Analytics
 
-**Última atualização**: 19 de agosto de 2026.
+{{mm-mca-rebranding}}
 
-Essas notas de versão abordam a versão mais recente do Mix Modeler. As versões do Mix Modeler operam em um modelo de entrega contínua, que permite uma cadência de lançamento mensal aproximada. Devido a isso, essas notas de versão são atualizadas, portanto, verifique-as regularmente.
+**Última atualização**: 29 de outubro de 2026.
+
+Essas notas de versão abordam a versão mais recente do Marketing Campaign Analytics. As versões do Marketing Campaign Analytics operam em um modelo de entrega contínua, que permite uma cadência de lançamento mensal aproximada. Devido a isso, essas notas de versão são atualizadas, portanto, verifique-as regularmente.
+
+## Outubro de 2026
+
+| Recurso | Descrição | [Início da implantação](#release-strategy) | [Disponibilidade geral](#release-strategy) |
+|---|---|---|---|
+| **Modelagem completa do funnel** | Você pode habilitar a [modelagem completa do funnel](/help/models/overview.md#full-funnel-modeling) ao criar um modelo a para mostrar como o marketing move os clientes por meio da funnel. Uma [visualização de fluxo do funnel](/help/models/insights.md#funnel-flow) está disponível em Informações do modelo para fornecer informações sobre o funnel completo. | 29 de outubro de 2026 | 29 de outubro de 2026 |
+
 
 ## Agosto de 2026
 
@@ -69,7 +88,7 @@ Essas notas de versão abordam a versão mais recente do Mix Modeler. As versõe
 
 ## Estratégia de lançamento
 
-O [!UICONTROL Mix Modeler] usa sinalizadores de recursos (também conhecidos como &quot;alternadores&quot;) para controlar a visibilidade de novos recursos, permitindo testes de escala controlados antes do lançamento completo. Essa estratégia de lançamento inclui as seguintes fases:
+O [!UICONTROL Marketing Campaign Analytics] usa sinalizadores de recursos (também conhecidos como &quot;alternadores&quot;) para controlar a visibilidade de novos recursos, permitindo testes de escala controlados antes do lançamento completo. Essa estratégia de lançamento inclui as seguintes fases:
 
 * **Teste limitado**: uma versão em fases começa com testes feitos por usuários internos da Adobe. Ele é então disponibilizado para um pequeno grupo de contas de clientes para garantir que o recurso atenda às necessidades e expectativas do cliente.
 

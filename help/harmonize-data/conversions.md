@@ -1,28 +1,34 @@
 ---
 title: Conversões
-description: Saiba como criar conversões para usar como parte da harmonização de seus dados no Mix Modeler.
+description: Saiba como criar conversões para usar como parte da harmonização de seus dados no Marketing Campaign Analytics.
 feature: Harmonized Data, Conversions
 exl-id: a8559426-452a-43e8-9a60-0c0bc97d863c
-TQID: https://experienceleague.adobe.com/rjFYd9XMTc5z4frFlq41PJqh9Zim-qoHSToyZenTPXE
+autotag-review: '2026-05-01T09:15:50.061Z'
+TQID: 'https://experienceleague.adobe.com/5m8Z9cc9d42019sNXkstXDn6cOo-2yzzQWCw0VG1YrY'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
+    internal-label: Marketing Campaign Analytics
 feature_v2:
   - id: a567f0f7-0057-4079-8ded-5b24cc25af15
+    internal-label: Harmonized data
 subfeature_v2:
   - id: bc2f5225-03d4-4bc8-89ec-99d78c30e6dd
+    internal-label: Conversions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-autotag-review: '2026-05-01T09:15:50.061Z'
-source-git-commit: 5579087b9381c4d8e909ed5fe3099fd42d5c6799
+    internal-label: Admin
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: 424
-ht-degree: 10%
-
+source-wordcount: '454'
+ht-degree: 9%
 ---
-
 # Conversões {#conversions}
 
+{{mm-mca-rebranding}}
+
+{{mm-mca-rebranding}}
 
 >[!CONTEXTUALHELP]
 >id="harmonizeddata_conversions_create"
@@ -36,7 +42,7 @@ Você define conversões de marketing para análise de atribuição.
 
 ## Gerenciar conversões
 
-Para ver uma tabela das conversões disponíveis, na interface do Mix Modeler:
+Para ver uma tabela das conversões disponíveis, na interface do Marketing Campaign Analytics:
 
 1. Selecione ![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** no painel esquerdo.
 
@@ -48,15 +54,15 @@ As colunas da tabela especificam detalhes sobre a conversão:
 | --- | ---|
 | Nome | O nome da conversão. |
 | Receita | A métrica de dados harmonizada a ser usada para calcular a receita de uma conversão. |
-| Métrica de conversão | A métrica de dados harmonizada a ser usada como a métrica de conversão para análise. |
-| Categoria | A categoria de conversão da conversão. |
+| Métrica de conversão | A métrica de dados harmonizada a ser usada como a métrica de conversão para análise. Isso indica o resultado numérico principal do negócio, como: pedidos, receita, número de assinaturas e muito mais. |
+| Categoria | A regra de conversão a ser aplicada, em que uma dimensão de conversão é usada para classificar o tipo de conversão. |
 | Criado | Data e hora de criação da conversão. |
 | Última modificação | Data e hora da última modificação da conversão. |
 
 
 ## Adicionar uma conversão
 
-Para adicionar uma conversão, na interface ![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Conversion]** no Mix Modeler:
+Para adicionar uma conversão, na interface ![DataSearch](/help/assets/icons/DataCheck.svg) **[!UICONTROL Harmonized data]** > **[!UICONTROL Conversion]** no Marketing Campaign Analytics:
 
 1. Selecione ![Adicionar](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add a conversion]**.
 
@@ -70,7 +76,7 @@ Para adicionar uma conversão, na interface ![DataSearch](/help/assets/icons/Dat
 
       1. Selecione um valor para o operador ![Divisa](/help/assets/icons/ChevronDown.svg), por exemplo **[!UICONTROL is]**.
 
-      1. Selecione um valor em **[!UICONTROL *Selecione o valor *]**&#x200B;ou insira um valor, por exemplo **[!UICONTROL Store]**.
+      1. Selecione um valor em **[!UICONTROL *Selecione o valor *]**ou insira um valor, por exemplo **[!UICONTROL Store]**.
 
    1. Selecione um campo harmonizado de **[!UICONTROL Conversion metric for analysis]**, por exemplo **[!UICONTROL Orders]**.
 

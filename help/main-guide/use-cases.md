@@ -1,28 +1,28 @@
 ---
-title: Casos de uso do Mix Modeler
-description: Casos de uso do Mix Modeler.
+title: Casos de uso do Marketing Campaign Analytics
+description: Casos de uso do Marketing Campaign Analytics.
 feature: Schemas, Datasets, Conversions, Harmonized Data, Marketing Touch Points, Models, Plans
 exl-id: cc82abec-d0ce-44bf-ad7e-fc379a394185
 autotag-review: '2026-05-01T08:58:19.052Z'
-TQID: 'https://experienceleague.adobe.com/AaVm2Jwz9MX-zuURspqkXLG9ZoO91iBowQU-hWBg-4M'
+TQID: 'https://experienceleague.adobe.com/VXzlnHxANGNL1O933YuOI2Mgv2ao0MD4-ngh-YyNw0g'
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
-    internal-label: Mix Modeler
+    internal-label: Marketing Campaign Analytics
 feature_v2:
   - id: a234aebd-3855-4376-a64d-29b38411e0c5
     internal-label: Marketing mix modeling
-  - id: fe1c9ae8-a908-4ae1-a0b6-fcf35177b134
-    internal-label: Marketing touch attribution
-  - id: fbd94e4b-f9b8-42a4-8df5-3f917aabae24
-    internal-label: Schemas
-  - id: e0abf868-dae2-4c1c-83e9-b21799232845
-    internal-label: Datasets
   - id: a567f0f7-0057-4079-8ded-5b24cc25af15
     internal-label: Harmonized data
-  - id: f40f1683-8300-4054-aab8-77da06ad63ff
-    internal-label: Models
   - id: d822825b-9821-40d5-9b0d-42a9e3f317c5
     internal-label: Plans
+  - id: e0abf868-dae2-4c1c-83e9-b21799232845
+    internal-label: Datasets
+  - id: f40f1683-8300-4054-aab8-77da06ad63ff
+    internal-label: Models
+  - id: fbd94e4b-f9b8-42a4-8df5-3f917aabae24
+    internal-label: Schemas
+  - id: fe1c9ae8-a908-4ae1-a0b6-fcf35177b134
+    internal-label: Marketing touch attribution
 subfeature_v2:
   - id: bc2f5225-03d4-4bc8-89ec-99d78c30e6dd
     internal-label: Conversions
@@ -40,16 +40,20 @@ topic_v2:
     internal-label: Measurement
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 6d83679f1c053f0be6eefd17929364d53221a31a
+source-git-commit: 9d6bd798e97d36d49b7753dc9574b102efb3d6bf
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '649'
 ht-degree: 3%
 ---
-# Casos de uso do Mix Modeler
+# Casos de uso do Marketing Campaign Analytics
 
-O Mix Modeler habilita os seguintes casos de uso principais.
+{{mm-mca-rebranding}}
+
+O Marketing Campaign Analytics habilita os seguintes casos de uso principais.
 
 ## Entender o desempenho incremental omnicanal
 
