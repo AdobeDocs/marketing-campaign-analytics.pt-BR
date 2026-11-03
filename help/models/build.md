@@ -303,7 +303,7 @@ Para disponibilizar os dados de pontuação do modelo para a Customer Journey An
 Para relatar e analisar os dados do Marketing Campaign Analytics rapidamente, em um [projeto do espaço de trabalho](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/home) do Customer Journey Analytics:
 
 1. Selecione **[!UICONTROL Workspace]** > **[!UICONTROL Adobe templates]**.
-1. Selecione o **[!UICONTROL Marketing Campaign Analytics Insights Data View (_sandbox-name _)]**dedicado como a exibição de dados a ser usada para um projeto.
+1. Selecione o **[!UICONTROL Marketing Campaign Analytics Insights Data View (_sandbox-name _)]**&#x200B;dedicado como a exibição de dados a ser usada para um projeto.
 1. Selecione o **[!UICONTROL Marketing Campaign Analytics Incremental Insights]** [modelo](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#marketing-campaign-analytics-templates).
    * Selecione **[!UICONTROL Preview]** para ver uma visualização.
 
