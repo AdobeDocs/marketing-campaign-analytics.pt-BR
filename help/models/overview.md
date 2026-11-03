@@ -36,9 +36,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 47233296898cdc0329ff7f43f897c65b4c470ee2
+source-git-commit: c75532d37a87f39cb61eabd58333b39895cf3a69
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1329'
 ht-degree: 0%
 ---
 # Visão geral dos modelos
@@ -49,7 +49,7 @@ A funcionalidade do modelo no Marketing Campaign Analytics permite configurar, t
 
 Os modelos são baseados nos dados harmonizados que você cria como parte do fluxo de trabalho do aplicativo.
 
-Um modelo no Marketing Campaign Analytics é um modelo de aprendizado de máquina empregado para medir e prever um resultado especificado com base nos investimentos de um profissional de marketing. Pontos de contato de marketing e dados de nível de resumo podem ser usados como uma entrada. O Marketing Campaign Analytics permite criar variantes de modelos com base em diferentes conjuntos de variáveis, dimensões e resultados, como receitas, unidades vendidas e clientes potenciais.
+Um modelo no Marketing Campaign Analytics é um modelo de aprendizado de máquina empregado para medir e prever um resultado especificado com base em investimentos de marketing. Pontos de contato de marketing e dados de nível de resumo podem ser usados como uma entrada. O Marketing Campaign Analytics permite criar variantes de modelos com base em diferentes conjuntos de variáveis, dimensões e resultados, como receitas, unidades vendidas e clientes potenciais.
 
 Um modelo requer:
 
@@ -62,10 +62,10 @@ Um modelo pode incluir opcionalmente:
 
 * Fatores externos.
 * Fatores internos.
-* Conhecimento prévio das contribuições de marketing de outras fontes, como experiência anterior das partes interessadas, testes incrementais e outros modelos.
+* Conhecimento prévio das contribuições de marketing de outras fontes, como experiência prévia das partes interessadas, testes incrementais e outros modelos.
 * Gastar compartilhamento, que usa compartilhamento de gasto relativo como proxy quando os dados de marketing são escassos.
 
-Quando um modelo é criado pela primeira vez, a criação inicia imediatamente o processo de treinamento e pontuação. Após a conclusão da execução inicial de treinamento e pontuação, os insights do modelo ficam disponíveis para revisão. Um modelo pode, posteriormente, ser reciclado. Além disso, dados podem ser adicionados ao modelo, o que requer a repontuação manual do modelo. O novo treinamento e a nova pontuação são um processo iterativo à medida que surgem novas descobertas e informações, e são necessários ajustes para obter um modelo mais adequado aos seus objetivos de negócios.
+Quando um modelo é criado pela primeira vez, a criação inicia imediatamente o processo de treinamento e pontuação. Após a conclusão da execução inicial de treinamento e pontuação, os insights do modelo ficam disponíveis para revisão. Um modelo é subsequentemente retreinado. Além disso, quando os dados são adicionados ao modelo, é necessária uma pontuação manual do modelo. O novo treinamento e a nova pontuação são um processo iterativo à medida que surgem novas descobertas e informações, e são necessários ajustes para obter um modelo mais adequado aos seus objetivos de negócios.
 
 ## Modelagem completa do funnel
 
@@ -75,13 +75,13 @@ A modelagem completa do funnel permite modelar os estágios reais de sua funnel.
 
 Use a modelagem completa do funnel para modelar em um KPI superior do funnel com um KPI inferior do funnel.
 
-* Exemplos de KPIs superiores do funnel são assinaturas de boletins informativos e outras métricas de reconhecimento de marca.
+* Exemplos de KPIs superiores do funnel são assinaturas de boletins informativos e outras métricas de percepção da marca.
 * Exemplos de métricas inferiores do funnel são métricas de conversão típicas, como receita e pedidos.
 
 As táticas superiores do funnel geralmente recebem menos crédito em um modelo MMM com foco em conversão. A modelagem completa do funnel ajuda você a entender:
 
 * Quais táticas de mídia e marketing contribuíram para a meta superior do funnel.
-* Quais táticas de mídia e marketing causaram impacto indireto na meta de conversão. Os pesos superiores do modelo do funnel são uma entrada para o modelo inferior do funnel para oferecer maior peso para a mídia e táticas de marketing, quando relevante.
+* Quais táticas de mídia e marketing causaram impacto indireto na meta de conversão. Os pesos superiores do modelo do funnel são uma entrada para o modelo inferior do funnel para oferecer maior peso à mídia e às táticas de marketing, quando relevante.
 
 ## Criar modelos
 
@@ -108,7 +108,7 @@ Para exibir uma tabela dos modelos atuais, na interface do Marketing Campaign An
 
    Para classificar a tabela em qualquer coluna em ordem crescente de ![ArrowMoveUpS2](/help/assets/icons2/ArrowMoveUp.svg) ou decrescente de ![ArrowMoveDownS2](/help/assets/icons2/ArrowMoveDown.svg), selecione o título da coluna.
 
-   Para classificar ou redimensionar a coluna **[!UICONTROL Name]**, selecione **[!UICONTROL Name]** ![Divisa](/help/assets/icons/ChevronDown.svg). No menu de contexto, selecione **[!UICONTROL Sort ascending]**, **[!UICONTROL Sort descending]** ou **[!UICONTROL Resize column]**. Como alternativa, você pode passar o mouse sobre o separador de colunas para redimensionar a coluna **[!UICONTROL Name]**.
+   Para classificar ou redimensionar a coluna **[!UICONTROL Name]**, selecione **[!UICONTROL Name]** ![Divisa](/help/assets/icons/ChevronDown.svg). No menu de contexto, selecione **[!UICONTROL Sort ascending]**, **[!UICONTROL Sort descending]** ou **[!UICONTROL Resize column]**. Para redimensionar a coluna **[!UICONTROL Name]**, passe o mouse sobre o separador de colunas.
 
    O status relatado do modelo depende de onde um modelo está em seu ciclo de vida. Por exemplo, se um modelo é criado, (re)treinado com sucesso ou não, ou (re)pontuado com sucesso ou não.
 
@@ -170,7 +170,7 @@ Para exibir mais detalhes de um modelo:
 
 1. Selecione ![Mais](/help/assets/icons/More.svg) para um modelo e, no menu de contexto, selecione **[!UICONTROL Duplicate]**.
 
-Você é redirecionado para as etapas de criação de um novo modelo, com um nome proposto composto pelo nome do modelo original anexado com **[!UICONTROL (Copy)] (_n_)**.
+Você é redirecionado para as etapas de criação de um novo modelo, com um nome proposto composto pelo nome do modelo original anexado com **[!UICONTROL (Copy)](_n_)**.
 
 ### Editar
 
@@ -195,6 +195,12 @@ Você é redirecionado para as etapas de criação de um novo modelo, com um nom
         * **[!UICONTROL Monthly]**: Selecione um dia do mês no menu suspenso Executar em cada e insira um horário válido (por exemplo `10:00 am`) ou use ![Relógio](/help/assets/icons/Clock.svg) para definir o horário.
 
      1. Selecione um **[!UICONTROL Training frequency]** no menu suspenso: **[!UICONTROL Monthly]**, **[!UICONTROL Quarterly]**, **[!UICONTROL Yearly]** ou **[!UICONTROL None]**.
+
+   * Se o modelo completo do funnel estiver ativado, uma atribuição desativada Ativar funnel completo estará visível. Não é possível modificar essa configuração.
+
+   * Para [disponibilizar dados de pontuação para o Customer Journey Analytics](build.md#customer-journey-analytics), selecione **[!UICONTROL Enable scores for Customer Journey Analytics]**.
+
+     Depois que as pontuações são ativadas para o Customer Journey Analytics, você não pode desativar essa configuração, a menos que o modelo seja excluído.
 
    * Para atualizar os [campos de relatórios de insights granulares](/help/models/build.md#granular-insights-reporting-fields), na seção **[!UICONTROL Granular Insights Reporting Fields]**:
      1. Selecione um ou mais campos harmonizados em **[!UICONTROL _Selecionar campos harmonizados_]** abaixo de **[!UICONTROL Includes]**. Os campos harmonizados selecionados são adicionados ao painel.
@@ -228,5 +234,5 @@ Para excluir vários modelos:
 
 1. Selecione vários modelos.
 1. Na barra de ação azul, selecione ![Excluir](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** para excluir os modelos.
-1. Selecione **[!UICONTROL Delete]** na caixa de diálogo de confirmação **[!UICONTROL Delete *x *modelos]**&#x200B;para excluir os modelos. Selecione **[!UICONTROL Cancel]**&#x200B;para cancelar.
+1. Selecione **[!UICONTROL Delete]** na caixa de diálogo de confirmação **[!UICONTROL Delete *x *modelos]**para excluir os modelos. Selecione **[!UICONTROL Cancel]**para cancelar.
 
