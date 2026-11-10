@@ -1,11 +1,10 @@
 ---
 user-guide-title: Guia do Marketing Campaign Analytics
-breadcrumb-title: Guia do Marketing Campaign Analytics
 user-guide-description: Saiba como usar o Marketing Campaign Analytics.
-source-git-commit: d232da07619419cc1ea789d41955a2c735eaa958
+source-git-commit: c7a4a15d2736010ec2e0a20160bbef257a87fd34
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 29%
+source-wordcount: '102'
+ht-degree: 30%
 ---
 # Guia do Marketing Campaign Analytics {#using}
 
