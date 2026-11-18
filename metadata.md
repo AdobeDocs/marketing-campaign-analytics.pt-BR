@@ -9,11 +9,11 @@ mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/marketing-campaign-analytics.pt-BR
 index: true
 role: User, Admin
-nudge: true
+nudge: republish
 product_v2:
   - id: b88c80e3-31df-4609-989d-d4dac0e6d973
     internal-label: Marketing Campaign Analytics
-source-git-commit: 72d64473ffc817a83787d874ae3b1427575f7133
+source-git-commit: c719537c2d00e82fdfcfc3373e756eb1539f0eb2
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 100%
