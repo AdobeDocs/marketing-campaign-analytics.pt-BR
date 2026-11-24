@@ -35,7 +35,7 @@ topic_v2:
 source-git-commit: 1e187d334357fc2696b7a15796d669f9632b63cb
 workflow-type: tm+mt
 source-wordcount: '2134'
-ht-degree: 8%
+ht-degree: 10%
 ---
 # Criar modelos
 
@@ -283,7 +283,7 @@ Para programar a pontuação e o treinamento do modelo:
 >[!CONTEXTUALHELP]
 >id="model_enable_cja"
 >title="Habilitar o Customer Journey Analytics"
->abstract="Para disponibilizar dados de pontuação para o Customer Journey Analytics para relatórios e análises, habilite essa configuração. Depois de habilitada, é necessário excluir o modelo para desabilitar essa configuração."
+>abstract="Para disponibilizar os dados de pontuação para o Customer Journey Analytics para relatórios e análises, habilite essa configuração. Depois de habilitada, você deve excluir o modelo para desabilitá-la."
 
 {{release-limited-testing-section}}
 
